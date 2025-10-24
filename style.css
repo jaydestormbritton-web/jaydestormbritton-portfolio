@@ -59,3 +59,66 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+
+
+.scrolling {
+  background: black;
+  opacity: 90%;
+  transition: all 0.5s;
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.bi:hover { color: #0d6efd; transition: 0.3s; }
+
+/* ------------------------------
+   PRINT-READY RESUME VIEW
+   ------------------------------ */
+@media print {
+  /* Remove navigation, buttons, and extras */
+  nav, header, footer, .btn, .bd-mode-toggle {
+    display: none !important;
+  }
+
+  /* Simplify layout for print */
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    line-height: 1.4;
+    box-shadow: none;
+  }
+
+  /* Make cards and sections fit neatly */
+  section, .card, .container {
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Avoid page breaks in the middle of important sections */
+  h1, h2, h3, p {
+    page-break-inside: avoid;
+  }
+
+  /* Fit content to a single page */
+  * {
+    overflow: visible !important;
+  }
+}
+
+.btn-primary {
+  background-color: #000;      /* solid black */
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #222;      /* slightly lighter on hover */
+  border-color: #222;
+}
